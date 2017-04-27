@@ -3,7 +3,7 @@ var student;
 
 function print(message){
 	var outputDiv = document.getElementById('output');
-	output.innerHTML = message;
+	outputDiv.innerHTML = message;
 }
 
 for(var i = 0 ; i < students.length ; i++ ){
