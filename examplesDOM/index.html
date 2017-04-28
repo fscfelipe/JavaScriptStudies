@@ -5,28 +5,43 @@
     </head>
     <body>
         <h1 id="myHeading">JavaScript and the DOM</h1>
-        <p>Making web page interactive</p>
+        <button id="hideAll">Hide All elements</button>
 
-        <input type="text" id="myTextInput">
-        <button id="myButton">Change headline color</button>
+        <div class="willBeHided">
+            <p>Making web page interactive</p>
 
-        <br><br>
+            <input type="text" id="myTextInput">
+            <button id="myButton">Change headline color</button>
 
-        <p class="error-not-green">This is paragraph one</p>
-        <p>The second paragraph</p>
-        <p class="error-not-green" >Another paragraph</p>
-        <p>Helloooooooooooo</p>
-        <p>Just another one</p>
-                
+            <br><br>
 
-        <input type="text" id="myInputPColor">
-        <button id="myBtnParagraph">Change Paragraphs colors</button>
-        
-        <br>
-        
-        <input type="text" id="myInputSecPColor">
-        <button id="myBtnPSecond">Change second paragraph color</button>
+            <p class="error-not-green">This is paragraph one</p>
+            <p>The second paragraph</p>
+            <p class="error-not-green" >Another paragraph</p>
+            <p>Helloooooooooooo</p>
+            <p>Just another one</p>
+                    
+
+            <input type="text" id="myInputPColor">
+            <button id="myBtnParagraph">Change Paragraphs colors</button>
+            
+            <br>
+            
+            <input type="text" id="myInputSecPColor">
+            <button id="myBtnPSecond">Change second paragraph color</button>
+
+            <br>
+
+            <input type="text" id="myChangeH1">
+            <button id="myBtnChangeH1tc">Change H1 Name c/ .textContent</button>
+            <button id="myBtnChangeH1in">Change H1 Name c/ innerHTML</button>
+
+            <br>
+            <input type="text" id="makeChecklist">
+            <button id="myMakeMeChecklist">Make this input text a checklist</button>
+        </div>
 
         <script src="script.js"></script>
+        <script src="script2.js"></script>
     </body>
 </html>

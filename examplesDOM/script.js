@@ -17,6 +17,8 @@ const mySecParagraph = document.getElementsByTagName('p')[2];
 const errorNotGreen = document.getElementsByClassName('error-not-green');
 
 //document.querySelectorAll
+//Podemos ver que as propriedades CSS também podem ser alteradas
+//Element.style.prop
 const evens = document.querySelectorAll('p:nth-child(even)');
 for(let i=0 ; i < evens.length ; i++){
     evens[i].style.backgroundColor = 'lightgray';
