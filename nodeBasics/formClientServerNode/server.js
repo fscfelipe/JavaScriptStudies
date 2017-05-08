@@ -16,7 +16,7 @@ function displayForm(res) {
     fs.readFile('form.html', function (err, data) {
         res.writeHead(200, {
             'Content-Type': 'text/html',
-                'Content-Length': data.length
+            'Content-Length': data.length
         });
         res.write(data);
         res.end();
@@ -33,7 +33,14 @@ function processAllFieldsOfTheForm(req, res) {
         res.writeHead(200, {
             'content-type': 'text/plain'
         });
+
         res.write('received the data:\n\n');
+        //fields é um arquivo JSON
+        if (fields.email === "felipesobreira.c@hotmail.com")
+            res.write('Está logado, com os seguintes dados:\n\n');
+        else
+            res.write('Não está logado, com os seguintes dados:\n\n');
+
         res.end(util.inspect({
             fields: fields,
             files: files
